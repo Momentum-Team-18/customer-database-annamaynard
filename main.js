@@ -1,0 +1,1 @@
+let customerInfo= document.querySelector(#customer-card)

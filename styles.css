@@ -2,16 +2,16 @@ header {
   font-size: 100px;
   border: 3px solid black;
   padding: 10px;
-  background: yellow
+  background: yellow;
 }
 
 body {
-background: lightblue;
+  background: lightblue;
 }
 
-.costumer-grid {
-    background: pink;
- font-family:Arial, Helvetica, sans-serif;
+#costumer-grid {
+  background: pink;
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 300px);
   justify-content: center;
@@ -20,8 +20,8 @@ background: lightblue;
   margin: 5px;
 }
 
-.costumer-card { 
-    background: white;
+.costumer-card {
+  background: white;
   border: black solid 2px;
   padding: 10px;
 }

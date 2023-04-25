@@ -5,30 +5,20 @@ header {
   background: lightgoldenrodyellow;
   text-align: center;
 }
-
+/* 
 body {
   background: rgb(236, 231, 224);
-  border: white solid 2px;
-}
+} */
 
-h1{
-    text-align: center;
-}
-#costumerProfiles {
-  background: pink;
-  font-family: Arial, Helvetica, sans-serif;
+#customerProfiles {
   display: flex;
   flex-wrap: wrap;
+  padding: 3px;
   margin: 10px;
+  background: pink;
+  font-family: Arial, Helvetica, sans-serif;
   border: black solid 2px;
 }
 
-#grid-item{
-  background: white;
-  border: black solid 2px;
-  padding: 10px;
-}
 
-#name {
-  font-size: 20px;
-}
+

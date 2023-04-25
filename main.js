@@ -1,29 +1,29 @@
-const customerGrid = document.getElementById("#customer-grid");
 
-// Create a grid item for each customer and append it to the grid container
+let customerProfiles = document.querySelector('#customerProfiles');
 
-customers.forEach((customer) => {
-  const gridItem = document.createElement("div");
+console.log(customerProfiles);
 
-  customerGrid.appendChild(gridItem);
+// Build a container for each customer and populate 
 
-  gridItem.classList.add("grid-item");
-  gridItem.innerHTML = `
-    <img src="${customer.picture.thumbnail}" alt="${customer.name.first} ${customer.name.last}">
-    <h3>${customer.name.first} ${customer.name.last}</h3>
-    <p>${customer.email}</p>
-    <p>${customer.phone}</p>
-    <p>${customer.location.city}, ${customer.location.state}</p>
-    <p>${customer.registered}</p>
-  `;
-});
+for (let customer of customers) {
 
-// let peopleListed= []
-// // create empty array to keep track of people we arleady aded divs for
+    let customerCard = document.createElement('div');
+    // created the card for this customer
 
-// let statesListed= []
-// console.log(statesListed)
+    let customerName = document.createElement('h2');
+    customerName.innerText = `${customer.name.first} ${customer.name.last}`;
+    customerCard.appendChild(customerName);
+    // added the name of the customer to the card 
 
-// function createCustomerCardDiv (name){
-//   let customerCardDiv = document.createElement ("div");
-// }
+    let customerEmail = document.createElement('p');
+    customerEmail.innerText = customer.email;
+    customerCard.appendChild(customerEmail);  
+   
+
+    customerProfiles.appendChild(customerCard);
+
+
+
+
+            // creating a div to hold all of each customer info 
+}

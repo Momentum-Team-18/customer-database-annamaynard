@@ -14,13 +14,11 @@ body {
 h1{
     text-align: center;
 }
-#costumer-grid {
+#costumerProfiles {
   background: pink;
   font-family: Arial, Helvetica, sans-serif;
-  display: grid;
-  grid-template-columns: repeat(4, 1 fr);
-  gird-template-rows: repeat (6, 1fr);
-  grid-gap-: 10px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 10px;
   border: black solid 2px;
 }

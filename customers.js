@@ -1,16 +1,4 @@
-// QUESTIONS FOR CLASS 
-  // Do we use a seperate JS file? 
-  // do the data library and the functions live in the same file?
-  // how many JS files are used in a single website?
-  // where is the best place to always start -- is there a clear formula or is it all non-linear? 
-  
-
-
-
-
-// let customerInfo = document.queerySelector("#cutsomer-grid")
-
-const customers = [
+ const customers = [
   {
     name: {
       title: "dr",
@@ -563,27 +551,33 @@ const customers = [
     },
     nat: "US",
   },
-];
+ ];
 
-const customerGrid = document.getElementById("#customer-grid");
 
-// Create a grid item for each customer and append it to the grid container
 
-customers.forEach((customer) => {
-  const gridItem = document.createElement("div");
 
-  customerGrid.appendChild(gridItem);
 
-  gridItem.classList.add("grid-item");
-  gridItem.innerHTML = `
-    <img src="${customer.picture.thumbnail}" alt="${customer.name.first} ${customer.name.last}">
-    <h3>${customer.name.first} ${customer.name.last}</h3>
-    <p>${customer.email}</p>
-    <p>${customer.phone}</p>
-    <p>${customer.location.city}, ${customer.location.state}</p>
-    <p>${customer.registered}</p>
-  `;
-});
+
+
+// const customerGrid = document.getElementById("#customer-grid");
+
+// // Create a grid item for each customer and append it to the grid container
+
+// customers.forEach((customer) => {
+//   const gridItem = document.createElement("div");
+
+//   customerGrid.appendChild(gridItem);
+
+//   gridItem.classList.add("grid-item");
+//   gridItem.innerHTML = `
+//     <img src="${customer.picture.thumbnail}" alt="${customer.name.first} ${customer.name.last}">
+//     <h3>${customer.name.first} ${customer.name.last}</h3>
+//     <p>${customer.email}</p>
+//     <p>${customer.phone}</p>
+//     <p>${customer.location.city}, ${customer.location.state}</p>
+//     <p>${customer.registered}</p>
+//   `; 
+// });
 
 // let peopleListed= []
 // // create empty array to keep track of people we arleady aded divs for

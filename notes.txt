@@ -17,3 +17,14 @@ js to build
 - Figure out how to format the date 
 - Put the DOB in the container 
 - Put the 'member since' in the container 
+
+
+
+
+
+// QUESTIONS FOR CLASS 
+  // Do we use a seperate JS file? 
+  // do the data library and the functions live in the same file?
+  // how many JS files are used in a single website?
+  // where is the best place to always start -- is there a clear formula or is it all non-linear? 
+  
